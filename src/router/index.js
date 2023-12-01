@@ -23,9 +23,10 @@ const router = createRouter({
       component: NewCourse
     },
     {
-      path: '/updateCourse',
+      path: '/updateCourse/:courseId',
       name: 'UpdateCourse',
-      component: UpdateCourse
+      component: UpdateCourse,
+      
     }
   ]
 })

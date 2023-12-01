@@ -52,7 +52,9 @@ export default{
         },
 
         async updateCourse(id){
-            router.push('/updateCourse',{'id':id});
+            // router.push('/updateCourse',{'id':id});
+            router.push({ name: 'UpdateCourse', params: { courseId: id } });
+
         },
 
         async deleteCourse(id){
